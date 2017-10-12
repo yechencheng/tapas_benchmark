@@ -31,6 +31,7 @@ void open_place_file() {
     place_fp = fopen(dp, "r");
     if ( place_fp == NULL ) {
         fprintf(stderr, "cannot open place file\n");
+        return;
     }else{
         fprintf(stderr, "place file opened\n");
     }

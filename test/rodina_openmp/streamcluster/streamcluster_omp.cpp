@@ -28,6 +28,8 @@
 #include <hooks.h>
 #endif
 
+#include "../../../include/placer.h"
+
 using namespace std;
 
 #define MAXNAMESIZE 1024 // max filename length
@@ -1253,7 +1255,7 @@ void streamCluster(PStream *stream,
   points.num = chunksize;
   //MEMREGION
   points.p = (Point *)malloc(chunksize * sizeof(Point));
-  register_named_address("points.p", points.p, sizefof(Point));
+  register_named_address("points.p", points.p, sizeof(Point));
 
   printf("size points : %d\n", chunksize * sizeof(Point) >> 20);
   for (int i = 0; i < chunksize; i++)
