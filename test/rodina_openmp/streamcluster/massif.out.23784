@@ -1,0 +1,705 @@
+desc: (none)
+cmd: ./sc_omp 10 20 256 65536 65536 1000 none output.txt 4
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=1241278752
+mem_heap_B=72779280
+mem_heap_extra_B=4216
+mem_stacks_B=0
+heap_tree=peak
+n5: 72779280 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 67108864 0x4040D1: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 67108864 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n1: 2097152 0x404152: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 2097152 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n1: 2048000 0x4040F5: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 2048000 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n1: 1024000 0x4040E5: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 1024000 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n0: 501264 in 15 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=2
+#-----------
+time=3280266751
+mem_heap_B=72779272
+mem_heap_extra_B=4200
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=4962541568
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=6164491120
+mem_heap_B=72785876
+mem_heap_extra_B=4292
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=8207370588
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=9770340308
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=11815658139
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=13025582790
+mem_heap_B=72785876
+mem_heap_extra_B=4292
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=14467684038
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=16632330444
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=18075795696
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=19880592261
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=22293939315
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=24339009488
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=detailed
+n5: 72783796 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 67108864 0x4040D1: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 67108864 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n1: 2097152 0x404152: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 2097152 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n1: 2048000 0x4040F5: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 2048000 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n1: 1024000 0x4040E5: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 1024000 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n0: 505780 in 20 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=15
+#-----------
+time=26022368742
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=27826297471
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=28908549586
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=31072883833
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=32396420233
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=33719506199
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=35763261478
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=37088201146
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=39252274833
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=40695198252
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=42859606030
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=44664095235
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=47189733148
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=48633734638
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=50076155285
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=51520082975
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=52962958332
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=detailed
+n5: 72783796 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 67108864 0x4040D1: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 67108864 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n1: 2097152 0x404152: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 2097152 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n1: 2048000 0x4040F5: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 2048000 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n1: 1024000 0x4040E5: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 1024000 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n0: 505780 in 20 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=32
+#-----------
+time=55127397395
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=57533233309
+mem_heap_B=72785876
+mem_heap_extra_B=4292
+mem_stacks_B=0
+heap_tree=detailed
+n5: 72785876 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 67108864 0x4040D1: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 67108864 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n1: 2097152 0x404152: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 2097152 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n1: 2048000 0x4040F5: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 2048000 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n1: 1024000 0x4040E5: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 1024000 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n0: 507860 in 20 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=34
+#-----------
+time=58736342116
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=60540600689
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=62946047137
+mem_heap_B=72782772
+mem_heap_extra_B=4276
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=64149583290
+mem_heap_B=72785876
+mem_heap_extra_B=4292
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=66072886130
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=67876666824
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=69080056231
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=71486432299
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=73290953755
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=74494849267
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=76299465070
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=78705123793
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=79907765526
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=82312938664
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=84116678731
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=85319347754
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=86401741739
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=87484106755
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=88566454731
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=89648984163
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=detailed
+n5: 72783796 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 67108864 0x4040D1: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 67108864 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n1: 2097152 0x404152: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 2097152 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n1: 2048000 0x4040F5: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 2048000 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n1: 1024000 0x4040E5: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 1024000 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n0: 505780 in 20 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=54
+#-----------
+time=90770537182
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=91853209173
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=93001837737
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=94084473498
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=95167229051
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=96250169886
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=97399838662
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=98482496363
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=99564948583
+mem_heap_B=72782772
+mem_heap_extra_B=4276
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=100647820724
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=detailed
+n5: 72783796 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 67108864 0x4040D1: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 67108864 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n1: 2097152 0x404152: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 2097152 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n1: 2048000 0x4040F5: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 2048000 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n1: 1024000 0x4040E5: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 1024000 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n0: 505780 in 20 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=64
+#-----------
+time=101730450933
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=102814304184
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=103897141827
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=104981348609
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=106063811234
+mem_heap_B=72782772
+mem_heap_extra_B=4276
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=107146141638
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=108228703771
+mem_heap_B=72782772
+mem_heap_extra_B=4276
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=109311272477
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=110394567463
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=111477926599
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=detailed
+n5: 72783796 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 67108864 0x4040D1: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 67108864 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n1: 2097152 0x404152: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 2097152 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n1: 2048000 0x4040F5: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 2048000 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n1: 1024000 0x4040E5: streamCluster(PStream*, long, long, int, long, long, char*) (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+  n0: 1024000 0x40138B: main (in /ssddata/benchmark/rodinia_3.1/openmp/streamcluster/sc_omp)
+ n0: 505780 in 20 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=74
+#-----------
+time=112560898792
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=113643199863
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=114725932082
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=115808272547
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=116915041418
+mem_heap_B=72783796
+mem_heap_extra_B=4284
+mem_stacks_B=0
+heap_tree=empty
