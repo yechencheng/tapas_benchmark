@@ -17,7 +17,7 @@ cpu:
 
 omp:
 	g++ -O3 -fopenmp -o $(TARGET_O) streamcluster_omp.cpp
-
+	#xlc++ -O3 -fopenmp -o $(TARGET_O) streamcluster_omp.cpp -qhot -qsmp=omp -qarch=pwr8 -qtune=pwr8
 
 clean:
 	rm -f *.o *~ *.txt sc_cpu sc_omp

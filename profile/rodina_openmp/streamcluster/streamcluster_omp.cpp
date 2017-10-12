@@ -28,6 +28,7 @@
 #include <hooks.h>
 #endif
 
+#include "../../../include/placer.h"
 using namespace std;
 
 #define MAXNAMESIZE 1024 // max filename length
@@ -1238,6 +1239,10 @@ void streamCluster(PStream *stream,
   block = (float *)malloc(chunksize * dim * sizeof(float));
   float *centerBlock = (float *)malloc(centersize * dim * sizeof(float));
   long *centerIDs = (long *)malloc(centersize * dim * sizeof(long));
+  register_address_range("block", block, chunksize * dim * sizeof(float), 20, sizeof(float));
+  register_address_range("centerBlock", centerBlock, centersize * dim * sizeof(float), 20, sizeof(float));
+  register_address_range("centerIDs", centerIDs, centersize * dim * sizeof(long), 20, sizeof(long));
+
   if (block == NULL)
   {
     fprintf(stderr, "not enough memory for a chunk!\n");
@@ -1249,6 +1254,8 @@ void streamCluster(PStream *stream,
   points.num = chunksize;
   //MEMREGION
   points.p = (Point *)malloc(chunksize * sizeof(Point));
+  register_address_range("points.p", points.p, chunksize * sizeof(Point), 20, sizeof(Point));
+
   printf("size points : %d\n", chunksize * sizeof(Point) >> 20);
   for (int i = 0; i < chunksize; i++)
   {
@@ -1334,6 +1341,7 @@ void streamCluster(PStream *stream,
 
 int main(int argc, char **argv)
 {
+  open_address_range_file();
   char *outfilename = new char[MAXNAMESIZE];
   char *infilename = new char[MAXNAMESIZE];
   long kmin, kmax, n, chunksize, clustersize;
@@ -1423,6 +1431,6 @@ int main(int argc, char **argv)
 #ifdef ENABLE_PARSEC_HOOKS
   __parsec_bench_end();
 #endif
-
+close_address_range_file();
   return 0;
 }

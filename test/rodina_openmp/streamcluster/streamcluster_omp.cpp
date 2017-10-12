@@ -1238,6 +1238,10 @@ void streamCluster(PStream *stream,
   block = (float *)malloc(chunksize * dim * sizeof(float));
   float *centerBlock = (float *)malloc(centersize * dim * sizeof(float));
   long *centerIDs = (long *)malloc(centersize * dim * sizeof(long));
+  register_named_address("block", block, sizeof(float));
+  register_named_address("centerBlock", centerBlock, sizeof(float));
+  register_named_address("centerIDs", centerIDs, sizeof(long));
+
   if (block == NULL)
   {
     fprintf(stderr, "not enough memory for a chunk!\n");
@@ -1249,6 +1253,8 @@ void streamCluster(PStream *stream,
   points.num = chunksize;
   //MEMREGION
   points.p = (Point *)malloc(chunksize * sizeof(Point));
+  register_named_address("points.p", points.p, sizefof(Point));
+
   printf("size points : %d\n", chunksize * sizeof(Point) >> 20);
   for (int i = 0; i < chunksize; i++)
   {
@@ -1334,6 +1340,7 @@ void streamCluster(PStream *stream,
 
 int main(int argc, char **argv)
 {
+  open_place_file();
   char *outfilename = new char[MAXNAMESIZE];
   char *infilename = new char[MAXNAMESIZE];
   long kmin, kmax, n, chunksize, clustersize;
@@ -1423,6 +1430,5 @@ int main(int argc, char **argv)
 #ifdef ENABLE_PARSEC_HOOKS
   __parsec_bench_end();
 #endif
-
   return 0;
 }
