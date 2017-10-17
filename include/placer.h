@@ -87,8 +87,8 @@ void register_address_range(const char* name, void* base, size_t size, unsigned 
     //printf("in entry, %p, %u, %u\n", base, size, units);
     for(i = 0; i < units; ++i) {
         fprintf(roi_fp, "%s\t%p\t%p\t%lu\t%lu\n", name,
-                                base + size / units * i, 
-                                base + size / units * (i+1),
+                                (char*)base + size / units * i, 
+                                (char*)base + size / units * (i+1),
                                 (size / unit) / units * i,
                                 (size / unit) / units * (i + 1)
                );
