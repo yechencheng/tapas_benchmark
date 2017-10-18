@@ -1,2 +1,2 @@
-./sc_omp 10 20 256 65536 65536 1000 none output.txt 4
-./sc_omp 10 20 128 1000000 200000 5000 none output.txt 4
+./sc_omp 10 20 128 1000000 200000 5000 none output.txt 20
+./sc_omp 10 20 256 65536 65536 1000 none output.txt 20

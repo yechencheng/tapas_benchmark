@@ -57,13 +57,13 @@ void open_place_file() {
 void register_named_address(const char* id, void* base, size_t unit) {
     for(int i = 0; i < regions.size; i++){
         if(strcmp(regions.data[i].id, id)) continue;
-        unsigned long long base = PAGE_BASE(base + regions.data[i].start * unit);
-        unsigned long long end = PAGE_BASE(base + regions.data[i].end * unit);
-        unsigned long size = ((unsigned long)(end - base)) / PAGE_SIZE;
+        unsigned long long start = PAGE_BASE((unsigned long long)base + regions.data[i].start * unit);
+        unsigned long long end = PAGE_BASE((unsigned long long)base + regions.data[i].end * unit);
+        unsigned long size = ((unsigned long long)(end-start)) / PAGE_SIZE;
         struct bitmask *nodes;
         nodes = numa_allocate_nodemask();
         numa_bitmask_setbit(nodes, regions.data[i].node);
-        if (mbind((void*)base, size * PAGE_SIZE, MPOL_BIND, nodes->maskp, nodes->size + 1, MPOL_MF_MOVE|MPOL_MF_STRICT)){
+        if (mbind((void*)start, size * PAGE_SIZE, MPOL_BIND, nodes->maskp, nodes->size + 1, MPOL_MF_MOVE|MPOL_MF_STRICT)){
             perror("err: ");
         }
         numa_bitmask_free(nodes);
